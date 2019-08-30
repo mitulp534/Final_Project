@@ -7,4 +7,13 @@
     <string name="txt_forgot_password">Forgot Password?</string>
     <string name="txt_noAccount">Don't Have Account?</string>
     <string name="txt_login_with_google">Login with Google</string>
+    <string name="text_Signup_Heading">Sign Up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="re_enter_password">Re-Enter password</string>
+    <string name="txt_signup_button">Sign up</string>
+    <string name="phone_number">Mobile Number</string>
+    <string name="signup_with_google">Sign up With Google</string>
 </resources>
