@@ -16,4 +16,7 @@
     <string name="txt_signup_button">Sign up</string>
     <string name="phone_number">Mobile Number</string>
     <string name="signup_with_google">Sign up With Google</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -184,6 +184,7 @@
                app:strokeWidth="5dp"
                android:elevation="10dp"
                android:textColor="#000000"
+               app:icon="@drawable/ic_google_logo"
                android:drawableStart="@drawable/ic_google_logo"
                android:background="@drawable/login_shape"
                android:text="@string/signup_with_google"
