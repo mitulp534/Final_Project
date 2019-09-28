@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFFFFFFF</color>
-    <color name="colorPrimaryDark">#FFFF</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#D81B60</color>
     <color name="dullWhite">#e5e5e5</color>
+    <color name="white">#FFFFFF</color>
     <color name="FakePrimary">#79E0E7</color>
     <color name="FakePrimaryDark">#45D4DE</color>
 </resources>
