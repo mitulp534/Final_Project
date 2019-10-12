@@ -16,6 +16,8 @@
     <string name="txt_signup_button">Sign up</string>
     <string name="phone_number">Mobile Number</string>
     <string name="signup_with_google">Sign up With Google</string>
+    <string name="temp1">This is Headline Of the News.....</string>
+    <string name="temp2">This will be sub title or description of News</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

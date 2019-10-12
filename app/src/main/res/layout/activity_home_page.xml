@@ -7,7 +7,6 @@
     tools:context=".HomePage">
 
     <FrameLayout
-
         android:id="@+id/container_bottom"
         android:layout_width="match_parent"
         android:layout_height="0dp"
