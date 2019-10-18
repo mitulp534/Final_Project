@@ -18,7 +18,9 @@
     <string name="signup_with_google">Sign up With Google</string>
     <string name="temp1">This is Headline Of the News.....</string>
     <string name="temp2">This will be sub title or description of News</string>
-
+    <string name="search_button1">Current Issues</string>
+    <string name="search_button2">Press Release</string>
+    <string name="search_button3">Important Instruction</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
