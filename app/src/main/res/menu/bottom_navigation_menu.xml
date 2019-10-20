@@ -15,7 +15,7 @@
         android:title="Notification"/>
 
     <item android:id="@+id/navigation_vote"
-        android:icon="@drawable/ic_fingerprint_black_24dp"
+        android:icon="@drawable/ic_touch_app_black_24dp"
         android:title="Vote"/>
 
 

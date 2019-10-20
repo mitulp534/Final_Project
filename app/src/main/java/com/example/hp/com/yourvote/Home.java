@@ -24,7 +24,7 @@ import static android.support.constraint.Constraints.TAG;
  */
 public class Home extends Fragment  {
 
-
+    //making news adapter and list
     NewsAdapter adapter;
     List<News> newsList = new ArrayList<>();
 
@@ -44,8 +44,10 @@ public class Home extends Fragment  {
         Log.d(TAG, "onCreateView: " + recyclerView);
         recyclerView.setHasFixedSize(true);
 
+        //for recyclerview to get activity
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+        //adding items into array list
         newsList.add(
                 new News(
                         1,
@@ -77,7 +79,7 @@ public class Home extends Fragment  {
                         R.drawable.news_image_4)
 
         );
-
+        //making adapter
         adapter = new NewsAdapter( getActivity().getApplicationContext(),newsList);
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());

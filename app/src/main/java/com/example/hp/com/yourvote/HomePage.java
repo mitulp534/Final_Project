@@ -15,17 +15,21 @@ public class HomePage extends AppCompatActivity implements BottomNavigationView.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        //changing the colour of status bar
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        //initializing bottom navigation
         bottomNavigationView=findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.navigation_home);
     }
 
+        //making object of all the fragments
     Home homeFragment = new Home();
     Search searchFragment = new Search();
     Notification notificationFragment = new Notification();
     Vote voteFragment = new Vote();
 
+        //click action for bottom navigation
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
