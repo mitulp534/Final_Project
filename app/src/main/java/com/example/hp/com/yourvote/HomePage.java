@@ -1,5 +1,6 @@
 package com.example.hp.com.yourvote;
 
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -53,4 +54,6 @@ public class HomePage extends AppCompatActivity implements BottomNavigationView.
         }
         return false;
     }
+
+
 }

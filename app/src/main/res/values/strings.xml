@@ -21,6 +21,16 @@
     <string name="search_button1">Current Issues</string>
     <string name="search_button2">Press Release</string>
     <string name="search_button3">Important Instruction</string>
+    <string name="register_now">Register Now"</string>
+    <string name="heading_voterAuth">Voter Authentication</string>
+    <string name="user_id_text">User ID</string>
+    <string name="txt_birthdate">Birth Date</string>
+    <string name="select_birthday">Tap here to select</string>
+    <string name="tv_otp"> Enter OTP</string>
+    <string name="GetOTP"> Get OTP</string>
+    <string name="ResendOTP">Resend OTP</string>
+    <string name="submit"> Submit</string>
+    <string name="voting_fragment_description">Your vote is a contribution to make a beautiful democratic and help to choose the correct leader for the nation. Your one vote can make the difference, your one vote can change the nation, your one vote can help to grow the nation. Every single vote is very important for the nation so grab your hands and register now to be ready for cast vote.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

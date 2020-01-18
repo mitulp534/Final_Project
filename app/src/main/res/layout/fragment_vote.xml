@@ -1,14 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vote_fragment_layout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Vote">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/home_title_linear"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/app_name"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="35sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_account_circle_black_24dp"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/home_title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vote_imageView"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/voting_image_1">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/voting_fragment_description"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/vote_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="@string/voting_fragment_description"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20sp">
+
+            </TextView>
+            <android.support.design.button.MaterialButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/register_now"
+                android:layout_below="@id/voting_fragment_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:elevation="8dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/register_now">
+
+            </android.support.design.button.MaterialButton>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
 
 </FrameLayout>
