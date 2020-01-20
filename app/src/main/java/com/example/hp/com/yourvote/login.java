@@ -19,14 +19,25 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        final TextView tvForgotPwd=(TextView)findViewById(R.id.tv_no_account);
+        final TextView noAccount=(TextView)findViewById(R.id.tv_no_account);
 
-        tvForgotPwd.setOnClickListener(new View.OnClickListener() {
+        noAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(login.this,signup.class);
                 startActivity(intent);
             }
         });
+
+        final TextView forgotPassword = (TextView)findViewById(R.id.forgot_password_id);
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(login.this,ForgotPassword.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

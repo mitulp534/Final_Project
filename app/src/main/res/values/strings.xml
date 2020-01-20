@@ -34,7 +34,24 @@
     <string name="tv_otp"> Enter OTP</string>
     <string name="GetOTP"> Get OTP</string>
     <string name="ResendOTP">Resend OTP</string>
+    <string name="Reset_Password">Reset Password</string>
     <string name="submit"> Submit</string>
+    <string name="txt_give_vote_heading">Choose any one party</string>
+    <string name="partyName_bjp">Bharatiya Janata Party</string>
+    <string name="candidateName_bjp">Dyushyant Patel</string>
+
+    <string name="partyName_congress">Indian National Congress</string>
+    <string name="candidateName_congress">Sandeep Tanwar</string>
+
+    <string name="partyName_bsp">Bahujan Samaj Party</string>
+    <string name="candidateName_bsp">Mukesh Goyal</string>
+
+    <string name="partyName_aap">Aam Aadmi Party</string>
+    <string name="candidateName_aap">Sarita Singh</string>
+
+    <string name="cast_vote">Vote</string>
+    <string name="vote_finished">Successful, Thanks for Voting</string>
+    <string name="return_home">Return to Home</string>
     <string name="voting_fragment_description">Your vote is a contribution to make a beautiful democratic and help to choose the correct leader for the nation. Your one vote can make the difference, your one vote can change the nation, your one vote can help to grow the nation. Every single vote is very important for the nation so grab your hands and register now to be ready for cast vote.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

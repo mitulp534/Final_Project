@@ -12,10 +12,10 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class VoteCastingFragment extends Fragment {
+public class VoteFinished extends Fragment {
 
-VoteFinished voteFinished = new VoteFinished();
-    public VoteCastingFragment() {
+Home home = new Home();
+    public VoteFinished() {
         // Required empty public constructor
     }
 
@@ -24,19 +24,14 @@ VoteFinished voteFinished = new VoteFinished();
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView=inflater.inflate(R.layout.fragment_vote_casting, container, false);
-
-        Button castVote=(Button)rootView.findViewById(R.id.btn_vote_cast);
-
-        castVote.setOnClickListener(new View.OnClickListener() {
+        View rootView=inflater.inflate(R.layout.fragment_vote_finished, container, false);
+        Button return_home=(Button)rootView.findViewById(R.id.btn_return_home);
+        return_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_bottom,voteFinished).addToBackStack(null).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_bottom,home).addToBackStack(null).commit();
             }
         });
-
-
-
         return rootView;
     }
 
