@@ -13,6 +13,9 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="re_enter_password">Re-Enter password</string>
+    <string name="birthdate">Birth date </string>
+    <string name="aadhar_number">Aadhar number</string>
+    <string name="voter_number"> Voter ID</string>
     <string name="txt_signup_button">Sign up</string>
     <string name="phone_number">Mobile Number</string>
     <string name="signup_with_google">Sign up With Google</string>
@@ -21,7 +24,9 @@
     <string name="search_button1">Current Issues</string>
     <string name="search_button2">Press Release</string>
     <string name="search_button3">Important Instruction</string>
-    <string name="register_now">Register Now"</string>
+    <string name="register_now">Vote Now"</string>
+    <string name="btn_register">Vote Now</string>
+    <string name="btn_result">Check Result</string>
     <string name="heading_voterAuth">Voter Authentication</string>
     <string name="user_id_text">User ID</string>
     <string name="txt_birthdate">Birth Date</string>

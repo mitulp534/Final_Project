@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DetailedActivity" />
-        <activity android:name=".signup" />
-        <activity android:name=".login"></activity>
-        <activity
-            android:name=".HomePage"
-            android:label="Home Page">
+        <activity android:name=".signup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".login"></activity>
+        <activity
+            android:name=".HomePage"
+            android:label="Home Page">
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>

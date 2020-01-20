@@ -90,6 +90,21 @@
 
             </android.support.design.button.MaterialButton>
 
+            <android.support.design.button.MaterialButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_result"
+                android:layout_below="@id/register_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:elevation="8dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/btn_result">
+
+            </android.support.design.button.MaterialButton>
+
         </RelativeLayout>
 
 

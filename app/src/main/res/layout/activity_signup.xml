@@ -24,7 +24,7 @@
        app:cardCornerRadius="20dp"
        android:elevation="10dp"
        android:outlineAmbientShadowColor="@color/FakePrimaryDark"
-       android:layout_marginTop="40dp"
+       android:layout_marginTop="30dp"
        android:layout_marginRight="25dp"
        android:layout_marginLeft="25dp"
        android:layout_marginBottom="30dp"
@@ -43,7 +43,7 @@
                android:id="@+id/first_name_layout"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_marginTop="25dp">
+               android:layout_marginTop="5dp">
 
                <AutoCompleteTextView
                    android:fontFamily="sans-serif-black"
@@ -109,29 +109,28 @@
            </android.support.design.widget.TextInputLayout>
            <android.support.design.widget.TextInputLayout
                android:layout_below="@id/password_layout"
-               android:id="@+id/re_enter_password_layout"
+               android:id="@+id/birthdate_layout"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="4dp">
 
-               <EditText
-                   android:fontFamily="sans-serif-black"
-                   android:id="@+id/re_password"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:hint="@string/re_enter_password"
-                   android:imeActionId="6"
-                   android:imeOptions="actionUnspecified"
-                   android:inputType="textPassword"
-                   android:maxLines="1"
-                   android:singleLine="true" />
-
+           <EditText
+               android:fontFamily="sans-serif-black"
+               android:id="@+id/birthdate_ED"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/birthdate"
+               android:inputType="date"
+               android:imeActionId="6"
+               android:imeOptions="actionUnspecified"
+               android:maxLines="1"
+               android:singleLine="true" />
            </android.support.design.widget.TextInputLayout>
 
            <android.support.design.widget.TextInputLayout
 
                android:id="@+id/phone_number_layout"
-               android:layout_below="@id/re_enter_password_layout"
+               android:layout_below="@id/birthdate_layout"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="4dp">
@@ -145,8 +144,45 @@
                    android:maxLines="1"
                    android:singleLine="true" />
            </android.support.design.widget.TextInputLayout>
-           <android.support.design.button.MaterialButton
+
+           <android.support.design.widget.TextInputLayout
+
+               android:id="@+id/aadhar_number_IL"
                android:layout_below="@id/phone_number_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp">
+               <AutoCompleteTextView
+                   android:fontFamily="sans-serif-black"
+                   android:id="@+id/aadhar_number_ET"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/aadhar_number"
+                   android:inputType="number"
+                   android:maxLines="1"
+                   android:singleLine="true" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+
+               android:id="@+id/Voter_number_IL"
+               android:layout_below="@id/aadhar_number_IL"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp">
+               <AutoCompleteTextView
+                   android:fontFamily="sans-serif-black"
+                   android:id="@+id/voter_number_ET"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/voter_number"
+                   android:inputType="text"
+                   android:maxLines="1"
+                   android:singleLine="true" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.button.MaterialButton
+               android:layout_below="@id/Voter_number_IL"
                android:id="@+id/btn_signup"
                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                android:layout_width="wrap_content"
@@ -162,35 +198,9 @@
                app:strokeColor="@color/FakePrimaryDark"
                app:strokeWidth="5dp"
                />
-           <View
-               android:id="@+id/separate_line"
-               android:layout_marginTop="10dp"
-               android:layout_below="@id/btn_signup"
-               android:background="@color/colorAccent"
-               android:layout_width="match_parent"
-               android:layout_height="2dp"/>
 
-           <android.support.design.button.MaterialButton
-               android:layout_marginTop="15dp"
-               android:layout_centerHorizontal="true"
-               android:id="@+id/signup_with_google"
-               android:layout_below="@id/separate_line"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               app:cornerRadius="10dp"
-               android:fontFamily="sans-serif-black"
-               app:rippleColor="@color/colorAccent"
-               app:strokeColor="@color/FakePrimaryDark"
-               app:strokeWidth="5dp"
-               android:elevation="10dp"
-               android:textColor="#000000"
-               app:icon="@drawable/ic_google_logo"
-               android:drawableStart="@drawable/ic_google_logo"
-               android:background="@drawable/login_shape"
-               android:text="@string/signup_with_google"
-               android:textSize="15sp"
-               android:backgroundTint="@color/dullWhite"
-               />
+
+
 
        </RelativeLayout>
 
