@@ -24,17 +24,18 @@
        app:cardCornerRadius="20dp"
        android:elevation="10dp"
        android:outlineAmbientShadowColor="@color/FakePrimaryDark"
-       android:layout_marginTop="30dp"
+       android:layout_marginTop="10dp"
        android:layout_marginRight="25dp"
        android:layout_marginLeft="25dp"
-       android:layout_marginBottom="30dp"
+       android:layout_marginBottom="60dp"
        android:background="@drawable/login_shape"
        android:layout_below="@id/heading_signup"
+
        android:layout_width="match_parent"
        android:layout_height="match_parent">
 
        <RelativeLayout
-           android:layout_margin="10dp"
+           android:layout_margin="5dp"
            android:padding="10dp"
            android:layout_width="match_parent"
            android:layout_height="match_parent">

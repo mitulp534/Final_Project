@@ -12,6 +12,7 @@ import android.widget.Button;
 
 public class Vote extends Fragment {
     VoterAuthentication objAuthh = new VoterAuthentication();
+    TutorialFragment tutorialFragment = new TutorialFragment();
     Button btn;
     public Vote() {
         // Required empty public constructor
@@ -30,6 +31,13 @@ public class Vote extends Fragment {
             }
         });
 
+        Button startTutorial=(Button)rootView.findViewById(R.id.btn_tutorial);
+        startTutorial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_bottom,tutorialFragment).addToBackStack(null).commit();
+            }
+        });
         return rootView;
     }
 
