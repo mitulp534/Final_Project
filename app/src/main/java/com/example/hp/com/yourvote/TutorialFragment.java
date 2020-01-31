@@ -15,7 +15,7 @@ import android.widget.Button;
 public class TutorialFragment extends Fragment {
 
 
-    
+
     public TutorialFragment() {
         // Required empty public constructor
     }
