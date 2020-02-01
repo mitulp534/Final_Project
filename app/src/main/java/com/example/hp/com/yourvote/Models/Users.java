@@ -9,7 +9,7 @@ public class Users {
     private String email;
     private String password;
     private String birthdate;
-    private Integer mobileNumber;
+    private String mobileNumber;
     private String aadharNumber;
     private String voterId;
 
@@ -61,11 +61,11 @@ public class Users {
         this.birthdate = birthdate;
     }
 
-    public Integer getMobileNumber() {
+    public String getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(Integer mobileNumber) {
+    public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 

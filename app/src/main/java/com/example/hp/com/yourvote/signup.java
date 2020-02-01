@@ -28,7 +28,7 @@ public class signup extends AppCompatActivity {
 
 
     private static final String TAG="signup";
-    private EditText etDate;
+    private  EditText etDate;
     private DatePickerDialog.OnDateSetListener dateSetListener;
     Button btnSignUp;
 
@@ -40,7 +40,7 @@ public class signup extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_signup);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        etDate=(EditText)findViewById(R.id.etBirthdate);
+         etDate=(EditText)findViewById(R.id.etBirthdate);
         btnSignUp =(Button) findViewById(R.id.btn_signup);
         Toast.makeText(this, "ahsdfhagf", Toast.LENGTH_SHORT).show();
 
@@ -68,7 +68,7 @@ public class signup extends AppCompatActivity {
                 users.setLastName(etLastName.getText().toString());
                 users.setEmail(etEmail.getText().toString());
                 users.setBirthdate(etBirthdate.getText().toString());
-                users.setMobileNumber(Integer.parseInt(etmobileNumber.getText().toString()));
+                users.setMobileNumber(etmobileNumber.getText().toString());
                 users.setAadharNumber(etAadharnumber.getText().toString());
                 users.setVoterId(etVoterId.getText().toString());
 
