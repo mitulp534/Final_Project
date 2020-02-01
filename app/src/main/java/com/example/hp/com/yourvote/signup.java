@@ -40,9 +40,22 @@ public class signup extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_signup);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        etDate=(EditText)findViewById(R.id.birthdate_ED);
+        etDate=(EditText)findViewById(R.id.etBirthdate);
         btnSignUp =(Button) findViewById(R.id.btn_signup);
         Toast.makeText(this, "ahsdfhagf", Toast.LENGTH_SHORT).show();
+
+
+
+        final EditText etFirstName= (EditText)findViewById(R.id.et_first_name);
+        final EditText etLastName= (EditText)findViewById(R.id.et_last_name);
+        final EditText etEmail= (EditText)findViewById(R.id.et_email);
+        final EditText etBirthdate= (EditText)findViewById(R.id.etBirthdate);
+        final EditText etmobileNumber= (EditText)findViewById(R.id.et_phone_number);
+        final EditText etAadharnumber= (EditText)findViewById(R.id.et_aadhar_number);
+        final EditText etVoterId= (EditText)findViewById(R.id.et_voter_number);
+
+
+
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,9 +63,15 @@ public class signup extends AppCompatActivity {
                 Retrofit r = RetrofitInst.getRetrofit();
                 UserResource userResource = r.create(UserResource.class);
                 Users users = new Users();
-                users.setName("asd");
-                users.setSalary(3333);
-                users.setTeamName("asdasdads");
+
+                users.setFirstName(etFirstName.getText().toString());
+                users.setLastName(etLastName.getText().toString());
+                users.setEmail(etEmail.getText().toString());
+                users.setBirthdate(etBirthdate.getText().toString());
+                users.setMobileNumber(Integer.parseInt(etmobileNumber.getText().toString()));
+                users.setAadharNumber(etAadharnumber.getText().toString());
+                users.setVoterId(etVoterId.getText().toString());
+
                 Call<Users> c = userResource.register(users);
                 c.enqueue(new Callback<Users>() {
                     @Override

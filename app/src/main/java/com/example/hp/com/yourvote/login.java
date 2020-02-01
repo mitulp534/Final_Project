@@ -48,7 +48,7 @@ public class login extends AppCompatActivity {
                     public void onResponse(Call<Users> call, Response<Users> response) {
                         Users u = response.body();
                        if(u!=null) {
-                           if(etUsername.getText().toString().equals(u.getId().toString()) && etPassword.getText().toString().equals(u.getName())) {
+                           if(etUsername.getText().toString().equals(u.getEmail().toString()) && etPassword.getText().toString().equals(u.getPassword())) {
                                Toast.makeText(login.this, "Success", Toast.LENGTH_SHORT).show();
                            }
                        } else {
