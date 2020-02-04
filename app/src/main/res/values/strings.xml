@@ -64,4 +64,6 @@
     <string name="step5">Step 5: After authentication successful, you will redirected to voting page</string>
     <string name="step6">Step 6: Now click on button which party you want to give vote and press on vote button</string>
     <string name="step7">Step 7: After pressing vote button if you get voting successful page means your vote is submitted</string>
+    <string name="watch_images">Watch Screenshot</string>
+    <string name="next">Next</string>
 </resources>

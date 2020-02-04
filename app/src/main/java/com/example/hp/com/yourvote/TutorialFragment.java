@@ -14,7 +14,7 @@ import android.widget.Button;
  */
 public class TutorialFragment extends Fragment {
 
-
+    TutorialScreen1Fragment screen1 = new TutorialScreen1Fragment();
 
     public TutorialFragment() {
         // Required empty public constructor
@@ -28,7 +28,13 @@ public class TutorialFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_tutorial, container, false);
 
-
+            Button nextButton = (Button)rootView.findViewById(R.id.btn_watch_screenshot);
+            nextButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container_bottom,screen1).addToBackStack(null).commit();
+                }
+            });
 
         return rootView;
     }

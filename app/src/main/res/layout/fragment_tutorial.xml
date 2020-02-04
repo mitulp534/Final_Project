@@ -97,7 +97,7 @@
 
        <android.support.design.button.MaterialButton
            android:layout_marginTop="10dp"
-           android:id="@+id/btn_Exit_Tutorial"
+           android:id="@+id/btn_watch_screenshot"
            android:layout_below="@id/tv_step7"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
            android:textStyle="bold"
            android:textSize="20dp"
            android:layout_centerHorizontal="true"
-           android:text="@string/btn_exit_tutorial">
+           android:text="@string/watch_images">
 
        </android.support.design.button.MaterialButton>
    </RelativeLayout>
