@@ -1,6 +1,7 @@
 package com.example.hp.com.yourvote;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -78,7 +79,15 @@ public class signup extends AppCompatActivity {
                     public void onResponse(Call<Users> call, Response<Users> response) {
                         Users afterCall = response.body();
                         if(afterCall != null) {
-                            Toast.makeText(signup.this, "Successfully registered", Toast.LENGTH_SHORT).show();
+                            if(afterCall.getAadharNumber().equals("Not found")) {
+                                Toast.makeText(signup.this, "Failed", Toast.LENGTH_SHORT).show();
+                            } else if(afterCall.getAadharNumber().equals("Already registered")) {
+                                Toast.makeText(signup.this, "Already registered", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Intent i = new Intent(getApplicationContext(), HomePage.class);
+                                startActivity(i);
+                                Toast.makeText(signup.this, "Successfully registered", Toast.LENGTH_LONG).show();
+                            }
                         } else {
                             Toast.makeText(signup.this, "Failed", Toast.LENGTH_SHORT).show();
                         }
