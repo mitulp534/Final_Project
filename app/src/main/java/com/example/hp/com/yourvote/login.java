@@ -22,6 +22,8 @@ import retrofit2.Retrofit;
 
 public class login extends AppCompatActivity {
 
+    public static Users loggedInUser=null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,15 +43,19 @@ public class login extends AppCompatActivity {
                 Retrofit r = RetrofitInst.getRetrofit();
                 UserResource userResource = r.create(UserResource.class);
 
-                Call<Users> c = userResource.authenticate(Integer.parseInt(etUsername.getText().toString()),etPassword.getText().toString());
+                Call<Users> c = userResource.authenticate(etUsername.getText().toString(),etPassword.getText().toString());
 
                 c.enqueue(new Callback<Users>() {
                     @Override
                     public void onResponse(Call<Users> call, Response<Users> response) {
                         Users u = response.body();
                        if(u!=null) {
-                           if(etUsername.getText().toString().equals(u.getEmail().toString()) && etPassword.getText().toString().equals(u.getPassword())) {
-                               Toast.makeText(login.this, "Success", Toast.LENGTH_SHORT).show();
+                           Toast.makeText(login.this, "Success", Toast.LENGTH_SHORT).show();
+
+                           if(etUsername.getText().toString().equals(u.getEmail()) && etPassword.getText().toString().equals(u.getPassword())) {
+                               loggedInUser = u;
+                               Intent i = new Intent(getApplicationContext() , HomePage.class);
+                               startActivity(i);
                            }
                        } else {
                            Toast.makeText(login.this, "Failed", Toast.LENGTH_SHORT).show();

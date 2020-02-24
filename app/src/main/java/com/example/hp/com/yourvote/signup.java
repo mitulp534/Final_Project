@@ -54,6 +54,7 @@ public class signup extends AppCompatActivity {
         final EditText etmobileNumber= (EditText)findViewById(R.id.et_phone_number);
         final EditText etAadharnumber= (EditText)findViewById(R.id.et_aadhar_number);
         final EditText etVoterId= (EditText)findViewById(R.id.et_voter_number);
+        final EditText etPassword= (EditText)findViewById(R.id.et_password);
 
 
 
@@ -72,6 +73,7 @@ public class signup extends AppCompatActivity {
                 users.setMobileNumber(etmobileNumber.getText().toString());
                 users.setAadharNumber(etAadharnumber.getText().toString());
                 users.setVoterId(etVoterId.getText().toString());
+                users.setPassword(etPassword.getText().toString());
 
                 Call<Users> c = userResource.register(users);
                 c.enqueue(new Callback<Users>() {

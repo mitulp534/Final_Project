@@ -10,7 +10,7 @@ import retrofit2.http.Path;
 public interface UserResource {
 
      @POST("/rest/users/auth/{uid}/{pwd}")
-    Call<Users> authenticate(@Path("uid")int uid, @Path("pwd") String pwd);
+    Call<Users> authenticate(@Path("uid")String uid, @Path("pwd") String pwd);
 
 
 
