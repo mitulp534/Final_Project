@@ -55,5 +55,8 @@ public class HomePage extends AppCompatActivity implements BottomNavigationView.
         return false;
     }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }

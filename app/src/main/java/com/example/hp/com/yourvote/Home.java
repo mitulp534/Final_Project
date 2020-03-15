@@ -51,5 +51,4 @@ public class Home extends Fragment  {
     }
 
 
-
 }

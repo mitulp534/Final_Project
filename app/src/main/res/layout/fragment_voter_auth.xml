@@ -80,14 +80,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <TextView
-                    android:layout_marginLeft="100dp"
+
+                <EditText
+                    android:id="@+id/et_fillotp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:hint="@string/tv_otp"
                     android:textAlignment="center"
-                    android:text="@string/tv_otp"
-                    android:textSize="35sp"
-                    android:layout_gravity="center"/>
+                    android:textSize="35sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="8dp"
@@ -110,14 +112,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/GetOTP"/>
+
                 <Button
-                    android:layout_marginLeft="8dp"
-                    android:layout_weight="1"
-                    android:layout_marginTop="8dp"
+                    android:id="@+id/btn_resendotp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/ResendOTP"/>
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/ResendOTP" />
 
             </LinearLayout>
 
