@@ -147,7 +147,8 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <RadioButton
+                    <CheckBox
+                        android:id="@+id/checkbox_bjp"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
                         android:layout_width="match_parent"
@@ -230,7 +231,8 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <RadioButton
+                        <CheckBox
+                            android:id="@+id/checkbox_con"
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:layout_width="match_parent"
@@ -311,7 +313,8 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <RadioButton
+                        <CheckBox
+                            android:id="@+id/checkbox_bsp"
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:layout_width="match_parent"
@@ -391,7 +394,8 @@
                         android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <RadioButton
+                        <CheckBox
+                            android:id="@+id/checkbox_aap"
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:layout_width="match_parent"

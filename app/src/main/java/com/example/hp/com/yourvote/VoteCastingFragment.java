@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 
 /**
@@ -27,6 +30,44 @@ VoteFinished voteFinished = new VoteFinished();
         View rootView=inflater.inflate(R.layout.fragment_vote_casting, container, false);
 
         Button castVote=(Button)rootView.findViewById(R.id.btn_vote_cast);
+        CheckBox btnBjp=(CheckBox)rootView.findViewById(R.id.checkbox_bjp);
+        CheckBox btnCon=(CheckBox)rootView.findViewById(R.id.checkbox_con);
+        CheckBox btnBsp=(CheckBox)rootView.findViewById(R.id.checkbox_bsp);
+        CheckBox btnAap=(CheckBox)rootView.findViewById(R.id.checkbox_aap);
+
+        btnBjp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast=Toast.makeText(getActivity().getApplicationContext(),"Bhartiya Janata Party",Toast.LENGTH_SHORT);
+                toast.setMargin(50,50);
+                toast.show();
+            }
+        });
+        btnCon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast=Toast.makeText(getActivity().getApplicationContext(),"Indian National Congress",Toast.LENGTH_SHORT);
+                toast.setMargin(50,50);
+                toast.show();
+            }
+        });
+
+        btnBsp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast=Toast.makeText(getActivity().getApplicationContext(),"Bahujan Samajvadi Party",Toast.LENGTH_SHORT);
+                toast.setMargin(50,50);
+                toast.show();
+            }
+        });
+        btnAap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast=Toast.makeText(getActivity().getApplicationContext(),"Aam aadmi party",Toast.LENGTH_SHORT);
+                toast.setMargin(50,50);
+                toast.show();
+            }
+        });
 
         castVote.setOnClickListener(new View.OnClickListener() {
             @Override
