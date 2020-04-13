@@ -71,27 +71,6 @@ public class VoterAuthentication extends Fragment {
         });
         mctx = container.getContext();
 
-        etDate = rootView.findViewById(R.id.select_birthday_ed);
-
-        Calendar calendar = Calendar.getInstance();
-        final int year = calendar.get(Calendar.YEAR);
-        final int month = calendar.get(Calendar.MONTH);
-        final int day = calendar.get(Calendar.DAY_OF_MONTH);
-
-        etDate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog(mctx, new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                        month = month + 1;
-                        String date = day + "/" + month + "/" + year;
-                        etDate.setText(date);
-                    }
-                }, year, month, day);
-                datePickerDialog.show();
-            }
-        });
 
 
         return rootView;

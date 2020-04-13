@@ -8,13 +8,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.hp.com.yourvote.Models.Login;
+import com.example.hp.com.yourvote.Models.Users;
+import com.example.hp.com.yourvote.Resources.VotingResource;
+import com.example.hp.com.yourvote.Utils.RetrofitInst;
+
+import retrofit2.Call;
+import retrofit2.Retrofit;
 
 
-public class Vote extends Fragment {
+public class VoteFragment extends Fragment {
     VoterAuthentication objAuthh = new VoterAuthentication();
     TutorialFragment tutorialFragment = new TutorialFragment();
     Button btn;
-    public Vote() {
+    public VoteFragment() {
         // Required empty public constructor
     }
 

@@ -37,14 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
-            <ImageButton
-                android:id="@+id/btn_profile"
-                android:layout_marginTop="9dp"
-                android:layout_marginLeft="75dp"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_account_circle_black_24dp"
-                android:background="@color/white"/>
+
         </LinearLayout>
 
     </LinearLayout>
